@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Day's</title>
+    <link rel="stylesheet" href="isi.css">
+</head>
+<body>
+    <script>
+        document.addEventListener('mousemove' , function(e){
+            let body = document.querySelector('body');
+            let heart = document.createElement('h1');
+            let x = e.offsetX;
+            let y = e.offsetY;
+            heart.style.left = x+'px';
+            heart.style.top = y+'px';
+
+            body.appendChild(heart);
+
+            setTimeout(function(){
+                heart.remove();
+            },1000)
+        })
+    </script>
+    <div class="happy-valentines">
+        <div class="valentines-day-card">
+          <div class="clouds"></div>
+          <div class="hearts">
+            <div class="heartOne">
+              <div class="left-side"></div>
+              <div class="right-side"></div>
+            </div>
+            <div class="heartTwo">
+              <div class="left-side"></div>
+              <div class="right-side"></div>
+            </div>
+                <div class="heartThree">
+              <div class="left-side"></div>
+              <div class="right-side"></div>
+            </div>
+             <div class="heartFour">
+              <div class="left-side"></div>
+              <div class="right-side"></div>
+            </div>
+             <div class="heartFive">
+             <div class="left-side"></div>
+              <div class="right-side"></div>
+            </div>
+          </div>
+          <div class="text"><span>Happy Valentine's</br> Day!</div>
+        </div>
+        <p class="hover">- Marsela Agnicova -</p>
+        <a class="wir" href="flower/flower.html">Click me buyy!</a>
+        </div>
+</body>
+</html>
